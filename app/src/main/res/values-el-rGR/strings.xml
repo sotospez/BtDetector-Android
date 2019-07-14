@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BtDetector</string>
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="bluetooth_not_available">Το Bluetooth δεν είναι διαθέσιμο.</string>
+    <string name="bluetooth_not_enabled">Το Bluetooth δεν ειναι ενεργοποιημένο.</string>
+    <string name="connect">Σύνδεση</string>
+    <string name="connected">Συνδεδεμένο</string>
+    <string name="connecting">Σύνδεση</string>
+    <string name="listen">Listen</string>
+    <string name="menu_home">Home</string>
+    <string name="none">None</string>
+    <string name="save">Αποθηκεύσετε</string>
+    <string name="sendBeep">Αποστολή Beep</string>
+    <string name="sound_from_anroid">Ήχος από το Android</string>
+    <string name="sound_from_detector">Ήχος από ανιχνευτή</string>
+    <string name="sound_from_tts">Ήχος από το TTS</string>
+    <string name="state">Κατάσταση</string>
+    <string name="zone01">Ζώνη 1</string>
+    <string name="zone02">Ζώνη 2</string>
+    <string name="zone03">Ζώνη 3</string>
+    <string name="zone04">Ζώνη 4</string>
+    <string name="zone05">Ζώνη 5</string>
+</resources>
