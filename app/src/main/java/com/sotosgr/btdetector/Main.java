@@ -85,7 +85,8 @@ public class Main extends Activity implements OnClickListener {
         tts.setLanguage(Locale.US);
 
 
-
+        //set context BT
+        bt = new BluetoothSPP(this);
 
         initBT();
         initSettings();
@@ -105,7 +106,7 @@ public class Main extends Activity implements OnClickListener {
     }
 
 
-    public void sendBtDetectorSettigns(){
+    public void sendBtDetectorSettings(){
 
 
         if(bt.isBluetoothEnabled()) {
@@ -130,8 +131,7 @@ public class Main extends Activity implements OnClickListener {
     }
 
     public void initBT(){
-        //set context BT
-        bt = new BluetoothSPP(getApplicationContext());
+
 
         if(!bt.isBluetoothAvailable()) {
             Toast.makeText(getApplicationContext(), getString(R.string.bluetooth_not_available), Toast.LENGTH_SHORT).show();
@@ -151,7 +151,7 @@ public class Main extends Activity implements OnClickListener {
                     strState =getString(R.string.connected) ;
 
                     //on Connected send the init setting to BT detector
-                    sendBtDetectorSettigns();
+                    sendBtDetectorSettings();
 
                 } else if (state == BluetoothState.STATE_CONNECTING) {
                     strState =getString(R.string.connecting) ;
@@ -307,7 +307,7 @@ public class Main extends Activity implements OnClickListener {
         Zone03 = sharedPref.getInt(Settings.ZONE_3,Zone03);
         Zone04 = sharedPref.getInt(Settings.ZONE_4,Zone04);
         Zone05 = sharedPref.getInt(Settings.ZONE_5,Zone05);
-        sendBtDetectorSettigns();
+        sendBtDetectorSettings();
     }
 
 
